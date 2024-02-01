@@ -8,7 +8,7 @@ function InitServer() {
   app.use((req, res, next) => {
     const url = req.url;
     const method = req.method;
-    console.log(`${user?.name || ""} hitted ${method} on ${url}`);
+    console.log(`hitted ${method} on ${url}`);
     next();
   });
 
